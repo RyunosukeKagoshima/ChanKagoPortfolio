@@ -1,0 +1,479 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Chankago-portfolio</title>
+    <script src="portfolio.js"></script>
+    <script src="jquery-3.6.3.min.download.js"></script>
+    <link rel="stylesheet" href="portfolio.css" type="text/css">
+    </head>
+
+    <header>
+
+        <div id="firstheader">
+        <p><a href="portfolio-profile.html">プロフィール</a></p>
+        <p><a href="#divul2">プロダクション</a></p>
+        <p><a href="present-activity.html">現在の活動</a></p>
+        <p><a href="#divul4">お問い合わせ</a></p>
+        </div>
+
+        <div id="headerimgarea">
+            <input type="button" value="BACK" id="next1"onclick="slideshow1()">
+
+            <div id="title">
+            <h1>ChanKago Portfolio</h1>
+            <p id="h1p">from ニュージーランド</p>
+            </div>
+            
+            <input type="button" onclick="slideshow2()" value="NEXT" id="next2">
+        </div>
+    </header>
+
+    <body>
+
+    <script>
+        $("#headerimgarea").ready(function (){
+            let y=setInterval(function pikapika(){
+            $("#next1").hide().fadeIn()
+            $("#next2").hide().fadeIn()},1000)
+
+            $("#next1").mouseover(function(){
+                $("#next1").css("border-right","solid 50px lightblue")
+            })
+            $("#next1").mouseout(function(){
+                $("#next1").css("border-right","solid 50px pink")
+            })
+            $("#next2").mouseover(function(){
+                $("#next2").css("border-left","solid 50px lightblue")
+            })
+            $("#next2").mouseout(function(){
+                $("#next2").css("border-left","solid 50px pink")
+            })
+        })
+    </script>
+
+    <h2>ニュージーランド在住 <br>新人プログラマー <br>ちゃんかご です！</h2>
+    <p class="head2">お立ち寄り下さり、ありがとうございます！ <br> 皆さんに私の現在が伝わるように <br> このポートフォリオサイトに <br> 私のプログラミング技術（主にJavascript）の <br> 成果を集めて日々更新していきます。</p>
+
+
+    
+    <div id="skillarea">
+        <p id="skilltitle">資格・スキルをみる</p>
+        <p id="skillcaption" style="opacity: 0;">HTML,CSS <br>Javascript <br>jQuery <br>英検準1級</p>
+    </div> 
+
+    <script>
+        $("#skillarea").click(function(){
+            $("#skillarea").animate({
+                height:"350px",
+            })
+            $("#skillcaption").animate({
+                opacity:"1"
+            })
+        })
+        $("#skillarea").dblclick(function(){
+            $("#skillarea").animate({
+                height:"100px"
+        })
+        $("#skillcaption").animate({
+            opacity:"0"
+        })
+    })
+    </script>
+
+    <p style="text-shadow: 3px 3px 3px lightgrey; font-size: 50px; text-align: center; margin-top: 100px;">募集案件</p>
+    <div id="works">
+        <div id="worksdiv">
+        <p id="workstitle1">ホームページ　<br>ウエブサイト　<br>制作・編集</p>
+        <p id="workscaption" style="display: none;text-align: center; line-height: 80px; ">ホームページやウエブサイトのデザイン、<br> 編集をさせていただきます。<br>現在、お試しで１０００円～受付中！</p>
+        </div>
+    </div>
+
+    <div id="works2">
+         <div id="worksdiv2">
+            <p id="workstitle2">日英、英日翻訳</p>
+            <p id="workscaption2" style="display: none; text-align: center; line-height: 100px;">英日翻訳　１ワード１５円～ <br>日英翻訳　１文字１３円～ <br>受付中</p>
+         </div>
+    </div>
+
+    <script>
+        $("#works").mouseover(function(){
+            $("#workstitle1").hide();
+            $("#workscaption").fadeIn(1000)
+        })
+        $("#works").mouseleave(function(){
+            $("#workscaption").hide();
+            $("#workstitle1").fadeIn(1000)
+        })
+
+        $("#works2").mouseover(function(){
+            $("#workstitle2").hide();
+            $("#workscaption2").fadeIn(1000)
+        })
+        $("#works2").mouseleave(function(){
+            $("#workscaption2").hide();
+            $("#workstitle2").fadeIn(1000)
+        })
+    </script>
+
+        <div id="divul1">   
+            <ul id="ul1">
+            <li><a href="portfolio-profile.html">Profile</a></li>
+            <p style="font-size: 20px; display: inline;">自己紹介させてください！</p>
+            <body>
+                
+            </body>
+            </html>
+            <br>[経歴] <br> [趣味] <br> [特技] <br> etc...</p>
+            </ul>
+            <img src="Tom.jpg" alt="tom" style="width:250px; height:fit-content; margin-top: 50px;margin-left: 30px;">
+        </div>
+            
+        <div id="divul2">
+            <img src="cookie.avif" alt="cookie" style="width: 250px; height: fit-content; margin-top: 50px; margin-right: 30px;">
+            <ul id="ul2">
+            <li>Production</li>
+            <p style="font-size: 20px; display: inline;">ポートフォリオとして<br>作ってきた作品の数々です。</p>
+            <p style="font-size: 20px;">2023.3月現在：　4作品</p>
+
+            <select name="select" id="select">
+                <option value="0">select</option>
+                <option value="1">ポモドーロタイマー</option>
+                <option value="2">カウントダウンタイマー</option>
+                <option value="3">ストップウォッチ</option>
+                <option value="4">BMI計算機</option>
+            </select>
+            <button id="selectportfolio" onclick="linkjump()">見る</button>
+            <p id="alert" style="color: red; display: none;">選んでください</p>
+
+            </ul>
+        </div>
+            <script>
+                $(window).on("load",function(){
+                    $("#divul1").hide().fadeIn(7000)
+                    $("#divul2").hide().fadeIn(9000)
+                    $("#divul3").hide().fadeIn(11000)
+                    $("#divul4").hide().fadeIn(12000)
+                })
+
+            </script>
+    
+
+    <div id="divul3">
+        <ul id="ul3">
+        <li><a href="present-activity.html"> 現在の活動</a></li>
+        <p style="font-size: 20px; display: inline;">旅をしながら生活するという目標を叶えるために。</p>
+        <p style="font-size: 20px;">[仕事] <br> [勉強] <br> [今年の野望] <br>etc...</p>
+        </ul>
+        <img src="rian.avif" alt="rian" style="width: 250px; height: fit-content; margin-top: 50px; margin-left: 30px;">
+    </div>
+
+    <div id="divul4">
+        <img src="tomato_red.png" alt="tomato" style="width: 250px; height: fit-content; margin-top: 50px; margin-left: 30px;">
+        <ul id="ul4">
+            <li>お問い合わせ & SNS</li>
+            <p style="font-size: 20px; display: inline;">お仕事の相談や海外生活について、こちらからお問い合わせください</p>
+            <a href="https://www.instagram.com/chankagonz/"><img src="instagram-icon.png" alt="instagram" style="height: 80px; width: auto;"></a>Instagram
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Ftwitter.com%2Fchankagonz%2F&e=AT18XLnaeIU97Vp6t60QxXKf61VjWJus0VuNydVrAWg27vvDTkGCAIjdc6CgC1hRvXkVSjKcgZhTrLWa61b1COv233HW-K6PTQFnAF8"><img src="twitter-icon.jpeg" alt="twitter" style="height:70px; width:auto;"></a> Twitter
+        </ul>
+    </div>
+
+    <button id="totop" onclick="totop()">上に戻る</button>
+    </body>
+
+    <footer>
+        
+
+            <p id="footerlast">ChanKago Portfolio</p>
+    </footer>
+</html>
+
+<style>
+    #headerimgarea{
+    display: flex;
+    text-align: center;
+    margin:0 auto;
+    justify-content: center;
+    background-image: url(h1-7.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 1000px;
+    height: fit-content;
+    justify-content: space-evenly;
+}
+#title{
+    width: fit-content;
+    padding-top: 200px;
+    height: 300px;
+    
+}
+h1{
+    background-color: rgb(250, 239, 225);
+}
+#h1p{
+    text-shadow: 1px 1px 1px rgb(234, 250, 209);
+}
+#firstheader{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+body{
+    background-color: rgb(237, 248, 182);
+}
+#next1{
+    width: 0px;
+    height: 0px;
+    border-top:solid 20px transparent;
+    border-bottom:solid 20px transparent;
+    border-left:solid 40px transparent;
+    border-right:solid 40px pink;
+    margin-top: 250px;
+    background: none;
+    
+}
+#next2{
+    width:0px;
+    height:0px;
+    border-top:solid 20px transparent;
+    border-bottom:solid 20px transparent;
+    border-left:solid 50px pink;
+    border-right:solid 50px transparent;
+    margin-top: 250px;
+    background: none;
+}
+h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: fantasy;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(206, 88, 104);
+    text-shadow: 3px 3px 4px rgb(155, 70, 70);
+
+}
+.head2{
+    text-align: center;
+    font-size: 25px;
+    font-family: calc();
+    color: rgb(97, 126, 143);
+    margin-bottom: 80px;
+}
+
+#skillarea{
+    border: 2px solid rgb(196, 196, 95);
+    background-color:rgb(199, 199, 69) ;
+    border-radius: 10px;
+    width: 450px;
+    height: 100px;
+    margin: 0 auto;
+}
+#skilltitle{
+    text-align: center;
+    font-size: 50px;
+    line-height: 0px;
+}
+#skillcaption{
+    text-align: center;
+    font-size: 30px;
+}
+
+#works{
+    border: 2px solid pink;
+    border-radius: 10px;
+    width: 450px;
+    margin: 0 auto;
+    height: 300px;
+    background-image: url(study.avif);
+    margin-bottom: 50px;
+}
+#works2{
+    border: 2px solid pink;
+    border-radius: 10px;
+    width: 450px;
+    margin: 0 auto;
+    height: 300px;
+    background-image: url(study.avif);
+    margin-bottom: 100px;
+}
+#workstitle1{
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+}
+#workstitle2{
+    text-align: center;
+    font-size: 40px;
+    line-height: 200px;
+}
+#worksdiv{
+    background-color: rgba(255, 255, 255, 0.562);
+}
+#worksdiv2{
+    background-color: rgba(255, 255, 255, 0.562);
+}
+
+
+#ul1{
+    list-style: none;
+    text-align: left;
+    position: relative;
+}
+#divul1{
+    display: flex;
+    background-color: rgb(241, 240, 240);
+    border-radius: 5px;
+    border: 3px solid rgb(247, 244, 244);
+    width:650px;
+}
+
+#ul2{
+    margin-left: auto;
+    list-style: none; 
+    text-align: right;
+}
+#divul2{
+    border: 3px solid rgb(247, 244, 244);
+    border-radius: 5px;
+    background-color: rgb(241, 240, 240);
+    display: flex;
+    width:650px;
+    margin-left: auto;
+}
+#ul1 li{
+    font-size: 50px;
+    text-shadow: 4px 4px 4px rgb(230, 173, 200);
+}
+li :hover{
+    background-color: rgb(248, 194, 194);
+    color: rgb(18, 36, 30);
+    text-shadow: 5px 5px 3px rgb(241, 191, 191);
+}
+#ul2 li{
+    font-size: 50px;
+    text-shadow: 4px 4px 4px rgb(152, 187, 231);
+}
+
+
+#ul3{
+    margin-right: auto;
+    list-style: none;
+    text-align: left;
+}
+#divul3{
+    border: 3px solid rgb(247, 244, 244);
+    border-radius: 5px;
+    background-color: rgb(241, 240, 240);
+    width:650px;
+    display: flex;
+}
+
+#ul4{
+    margin-left: auto;
+    list-style: none;
+    
+    text-align: right;
+}
+#divul4{
+    border: 3px solid rgb(247, 244, 244);
+    border-radius: 5px;
+    background-color: rgb(241, 240, 240);
+    margin-left: auto;
+    width:650px;
+    display: flex;
+}
+
+#ul3 li{
+    font-size: 50px;
+    text-shadow: 4px 4px 4px rgb(230, 173, 200);
+}
+
+#ul4 li{
+    font-size: 50px;
+    text-shadow: 4px 4px 4px rgb(230, 173, 200);
+}
+ul{
+    margin-top: 50px;
+}
+
+#totop{
+    width: 70px ;
+    height: 70px;
+    position: fixed;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    right: 20px;
+    bottom: 20px;
+}
+#footerdiv{
+    height: 300px;
+    background-color: bisque;
+}
+#footerlast{
+    text-align: center;
+    font-size: 20px;
+    justify-content: baseline;
+}
+
+</style>
+
+<script>
+    let i=0
+function slideshow1(){
+    let slide1 = document.getElementById("headerimgarea");
+    let slideimgs = ["h1-3.jpg","h1-4.jpg","h1-7.jpg"]
+    console.log(i)
+    i--
+    if (i==-1){
+        i=2
+    }
+    slideimgs[i]
+    console.log(slideimgs[i])
+    slide1.style.backgroundImage="url("+slideimgs[i]+")"
+}
+
+function slideshow2(){
+    let slide1 = document.getElementById("headerimgarea");
+    let slideimgs = ["h1-3.jpg","h1-4.jpg","h1-7.jpg"]
+    console.log(i)
+    i++
+    if (i==3){
+        i=0
+    }
+    slideimgs[i]
+    console.log(slideimgs[i])
+    slide1.style.backgroundImage="url("+slideimgs[i]+")"
+}
+
+function linkjump(){
+let Select=document.getElementById("select")
+let Selectvalue = Select.value;
+let Selectvalue2 = Number(Selectvalue)
+
+
+switch(Selectvalue2){
+    case 1:
+        window.open("pomodorotimer.html","ポモドーロタイマー-Chankago");
+break;
+    case 2:
+        window.open("countdowntimer.html","カウントダウンタイマー-Chankago");
+        break;
+    case 3:
+        window.open("stopwatch-java.html","ストップウォッチ-Chankago")
+    case 4:
+        window.open("BMI.html","BMi計算機-Chankago")
+    case 0:
+        let alert = document.getElementById("alert")
+        alert.style.display="block"
+}
+}
+
+function totop(){
+    window.scroll({
+        top:0,
+        behavior:"smooth"
+    })
+}
+
+</script>

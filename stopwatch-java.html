@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel='stylesheet' type='text/css'>
+        <title>Stopwatch</title>
+    </head>
+    
+
+    <header>
+        <h1><span style="color: red;">S</span><span style="color: aqua;">T</span><span style="color:brown;">O</span><span style="color: chartreuse;">P</span><span style="color: rgb(59, 190, 241);">W</span><span style="color: lightcoral;">A</span><span style="color:purple;">T</span><span style="color: gold;">C</span><span style="color: limegreen;">H</span></h1>
+        <style>
+            h1{
+                text-align: center;
+                font-size: 40px;
+                font-family:cursive;
+            }
+        </style>
+    </header>
+
+    <body>
+        <p id="timezone">
+            00:00.000
+        </p>
+        <div class="buttonzone">
+        <input type="button" class="button" id="sbutton" value="START">
+        <input type="button" class="button" id="stopbutton" value="STOP" disabled >
+        <input type="button" class="button" id="resetbutton" value="RESET">
+        </div>
+
+        <style>
+            #timezone{
+                font-size: 80px;
+                margin: 0 auto;
+                border: 3px solid lightblue;
+                border-radius: 20px;
+                width: fit-content;
+            }
+            .buttonzone{
+                text-align: center;
+            }
+            .buttonzone input{
+                margin: 30px;
+                font-size: 40px;
+            }
+        </style>
+        <script src="Stopwatch.js">
+            let timeZone = document.getElementById("timezone");
+            timeZone
+        </script>
+    </body>
+
+    <footer>
+    </footer>
+</html>

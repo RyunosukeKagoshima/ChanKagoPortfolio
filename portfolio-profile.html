@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>chankago-profile</title>
+        <script src="portfolio-profile.js"></script>
+        <script src="jquery-3.6.3.min.download.js"></script>
+        <link rel="stylesheet" href="portfolio-profile.css" type="text/css">
+    </head>
+
+    <header>
+        <div id="firstheader">
+            <p id="mainpagebutton"><a href="portfolio.html">メインページへ</a> </p>
+            </div>
+    
+            <div id="headerimgarea">
+                <input type="button" value="BACK" id="next1"onclick="slideshow1()">
+    
+                <div id="title">
+                <h1>ChanKago Portfolio</h1>
+                <p id="h1p">from ニュージーランド</p>
+                </div>
+                
+                <input type="button" onclick="slideshow2()" value="NEXT" id="next2">
+            </div>
+
+            <script>
+                $("#headerimgarea").ready(function (){
+                    let y=setInterval(function pikapika(){
+                    $("#next1").hide().fadeIn()
+                    $("#next2").hide().fadeIn()},1000)
+        
+                    $("#next1").mouseover(function(){
+                        $("#next1").css("border-right","solid 50px lightblue")
+                    })
+                    $("#next1").mouseout(function(){
+                        $("#next1").css("border-right","solid 50px pink")
+                    })
+                    $("#next2").mouseover(function(){
+                        $("#next2").css("border-left","solid 50px lightblue")
+                    })
+                    $("#next2").mouseout(function(){
+                        $("#next2").css("border-left","solid 50px pink")
+                    })
+                })
+            </script>
+        
+    </header>
+
+    <body>
+
+        <h2>プロフィール</h2>
+
+        <p>ちゃんかごプロフィールをご覧くださり、ありがとうございます。</p>
+        <p>このページでは、これから一緒にお仕事をしていく皆さんに、</p>
+        <p>先んじて私について知っていただくためのページです。</p>
+        <p>簡潔にまとめていますので、どうぞ最後までご覧ください。</p>
+
+
+        <ol id="mokuji">
+            <span id="mokujititle">もくじ</span>
+            <li><a href="#keireki">経歴</a></li>
+            <li><a href="#syumi">趣味</a></li>
+            <li><a href="#tokugi">特技</a></li>
+            <li><a href="#seikaku">性格</a></li>
+        </ol>
+        
+
+        <h3>基本情報</h3>
+        <ul>
+            <li>本名:籠島　竜之介</li>
+            <li>1994年8月生まれ</li>
+            <li>茨城出身</li>
+            <li>野球を約８年間した</li>
+            <li>埼玉、和歌山、オーストラリアに住んだことも</li>
+            <li>ニュージーランド在住</li>
+            <li>クリーナーの仕事しながらプログラミング勉強中！</li>
+        </ul>
+
+        <h3 id="keireki">経歴</h3>
+        <p>ここでは生い立ちから2022年末までに</p>
+        <p>やってきたことをご紹介します。</p>
+
+        <table cellspacing="0">
+            <caption style="font-size: 30px; padding-top: 30px;">職歴</caption>
+            <tr>
+                <th>住まい</th>
+                <th>活動</th>
+                <th>期間</th>
+            </tr>
+
+            <tr>
+                <td>茨城</td>
+                <td>東京の外国語関係の専門学校卒業</td>
+                <td>２年</td>
+            </tr>
+            
+            <tr>
+                <td>埼玉</td>
+                <td>東京でタクシードライバー</td>
+                <td>３年</td>
+            </tr>
+
+            <tr>
+                <td>オーストラリア</td>
+                <td>語学学校で英会話を学ぶ</td>
+                <td>５か月</td>
+            </tr>
+
+            <tr>
+                <td>オーストラリア</td>
+                <td>食料品配達ドライバー</td>
+                <td>５か月</td>
+            </tr>
+
+            <tr>
+                <td>オーストラリア</td>
+                <td>ビザのために畑仕事（体壊して挫折）</td>
+                <td>３か月</td>
+            </tr>
+
+            <tr>
+                <td>和歌山</td>
+                <td>ホテル業務（フロント＆レストランのウェイター）</td>
+                <td>６か月</td>
+            </tr>
+
+            <tr>
+                <td>茨城</td>
+                <td>英語の先生</td>
+                <td>２年</td>
+            </tr>
+            
+            <tr>
+                <td>茨城</td>
+                <td>ビジネスホテル・フロント</td>
+                <td>１年半（英語の先生と重なる）</td>
+            </tr>
+
+            <tr>
+                <td>ニュージーランド</td>
+                <td>ハウス・クリーニング</td>
+                <td>４か月（２０２２年末時点）</td>
+            </tr>
+
+            <colgroup style="background-color: aqua;"></colgroup>
+            <colgroup style="background-color: yellow;"></colgroup>
+            <colgroup style="background-color: pink;"></colgroup>
+
+        </table>
+
+        <h3 id="syumi">趣味</h3>
+        <p>私の趣味を<span style="color: blue;">現在の趣味</span>と<span style="color: red;">今はできてない趣味</span>に分けて記載します。</p>
+        <h4 style="color: blue;">現在の趣味</h4>
+        <ul id="syumiul">
+            <li>カフェ巡り</li><p>週に２回ほど、Instagramでたまに発信しています。</p>
+            <li>読書</li><p>ほぼ毎日ですが、ペースは遅いです。ビジネス書が多め</p>
+            <li>筋トレ</li><p>週に４日ほど、ジムには行かず、家でやっています。</p>
+        </ul>
+
+        <h4 style="color:red">今はできてない趣味</h4>
+        <ul id="syumiul">
+            <li>一人カラオケ</li><p>週に一回ほど行ってました、ジャンルはあまり問いません</p>
+            <li>サウナ</li><p>週に１，２回ほど行ってました</p>
+            <li>ゲーム</li><p>主にアクションゲームが好きで、ハマるとやりこんでしまうタイプでした。</p>
+
+        </ul>
+
+
+        <h3 id="tokugi">特技</h3>
+
+        <h4>英語</h4><p>得意といってもまだ日常会話レベルですが。。。英検は準一級を持っています。</p>
+        <h4>継続力</h4><p>筋トレ、プチ断食、プログラミング勉強など、毎日続けるのが得意です。</p>
+        <h4>行動力</h4><p>何でも一回はやってみるタイプです。留学、ダイエット、健康管理、旅行などいろんなことをトライしています。</p>
+
+        <h3 id="seikaku">性格</h3>
+        <p>・<span style="color: red;">ミニマリストっぽい</span>ところがあります。</p>
+        <p>旅行や留学、引っ越しなど、あまり長い期間一か所にいることがないので自然とそうなっていきました。</p>
+        <p>おかげで少ない生活費で楽しく過ごせています。</p>
+        <p>・<span style="color: red;">苦手なものがいくつかあり、</span>例えば営業、急かされること、絶叫マシンですね。</p>
+        <p>乗り越えた苦手分野もありますが、今は好きな場所で得意なことを探して生きています。</p>
+        <p>・<span style="color:red">「一人でコツコツと」</span>が好きです・</p>
+        <p>子供のころから、一人で黙々とゲームしたり、プラモデル作ったり、タクシードライバーも一人でやる仕事だからか、向いていました。</p>
+        <p>そのあたりの経験から、もしかしたらプログラミングも向いているのでは？と思い、勉強を始めました。</p>
+
+        <button id="totop" onclick="totop()">上に戻る</button>
+    </body>
+
+    <footer>
+        
+        <p style="text-align: center; font-size: 20px; color: white;">ChanKago portfolio</p>
+    </footer>
+
+
+</html>

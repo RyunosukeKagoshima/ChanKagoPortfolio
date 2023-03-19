@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>chankago-profile</title>
+        <script src="present.activity.js"></script>
+        <script src="jquery-3.6.3.min.download.js"></script>
+        <link rel="stylesheet" href="present-activity.css" type="text/css">
+    </head>
+
+    <header>
+        <div id="firstheader">
+            <p id="mainpagebutton"><a href="portfolio.html">メインページへ</a> </p>
+            </div>
+    
+            <div id="headerimgarea">
+                <input type="button" value="BACK" id="next1"onclick="slideshow1()">
+    
+                <div id="title">
+                <h1>ChanKago Portfolio</h1>
+                <p id="h1p">from ニュージーランド</p>
+                </div>
+                
+                <input type="button" onclick="slideshow2()" value="NEXT" id="next2">
+            </div>
+
+            <script>
+                $("#headerimgarea").ready(function (){
+                    let y=setInterval(function pikapika(){
+                    $("#next1").hide().fadeIn()
+                    $("#next2").hide().fadeIn()},1000)
+        
+                    $("#next1").mouseover(function(){
+                        $("#next1").css("border-right","solid 50px lightblue")
+                    })
+                    $("#next1").mouseout(function(){
+                        $("#next1").css("border-right","solid 50px pink")
+                    })
+                    $("#next2").mouseover(function(){
+                        $("#next2").css("border-left","solid 50px lightblue")
+                    })
+                    $("#next2").mouseout(function(){
+                        $("#next2").css("border-left","solid 50px pink")
+                    })
+                })
+            </script>
+        
+    </header>
+
+    <body>
+        <div id="h2div">
+        <h2>現在の活動</h2>
+        <p id="h2p">～ノマドワーカーになりたい～</p>
+        </div>
+
+        <div id="yajirushiarea">
+            <p id="ya1"></p>
+            <p id="ya2"></p>
+            <p id="ya3"></p>
+        </div>
+
+        <script>
+            $(window).ready(function ya(){
+                setInterval(function(){
+                $("#ya1").hide().fadeToggle(500)
+                $("#ya2").hide().fadeToggle(1000)
+                $("#ya3").hide().fadeToggle(1500)},2000)
+            })
+        </script>
+
+        <div id="h3div">
+            <h3>プログラミング勉強</h3>
+            <p>２０２２年末からプログラマーを目指すべく、勉強を始めました！<br>
+            Pythonも少しやりましたが、今はJavascript、Jquery,HTML,CSSで<br>
+            とにかくいろんなものを作っています。<br>
+            まだ簡単なものをしか作れていませんが、少しずつ出来ていくのが楽しいです！</p>
+        </div>
+
+        <div id="h3div">
+            <h3>ニュージーランドの生活の様子を発信</h3>
+            <p>ニュージーランドの景色やイベント、役に立ったことなどをSNSで発信しています。<br>
+            最近はプログラミング勉強もあって更新頻度を意図的に下げていますが、<br>
+            ときどきフォロワーさんと連絡をとったりしながら、少しづつ運営しています。</p>
+        </div>
+
+        <button id="totop" onclick="totop()">上に戻る</button>
+    </body>
+</html>

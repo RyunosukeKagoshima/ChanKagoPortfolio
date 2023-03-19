@@ -1,0 +1,58 @@
+
+
+<div id="calendar">
+
+    <p id="year" style="font-size: 30px;"></p>
+    <div id="abc">
+    <p id="month" style="font-size: 30px;"></p>
+    <p id="date" style="font-size: 70px;"></p>
+    <p id="day" style="font-size: 30px;"></p>
+    </div>
+ </div>
+
+ <style>
+    #calendar{
+    border: 2px solid black;
+    width: 200px;
+    text-align: center;
+    line-height: 10px;
+}
+#abc{
+    border: 1px solid black;
+    width: 200px;
+    line-height: 10px;
+}
+ </style>
+
+ <script>
+    let newdate=new Date();
+let year = newdate.getFullYear()
+let month = newdate.getMonth()
+let date = newdate.getDate()
+let day = newdate.getDay()
+let weekday = ['日', '月', '火', '水', '木', '金', '土'];
+
+window.addEventListener("load", function(){
+
+let showyear = document.getElementById("year")
+let showmonth = document.getElementById("month")
+let showdate = document.getElementById("date")
+let showday = document.getElementById("day")
+
+showyear.textContent = year
+showmonth.textContent = month+1+"月"
+showdate.textContent = date+"日"
+
+let weekday = ['日', '月', '火', '水', '木', '金', '土'];
+showday.textContent = weekday[day]
+
+if (day == 6){
+    let saturday =showdate.textContent;
+    saturday.style.color = "blue"
+}
+else if (day ==0){
+    let sunday = showdate.textContent;
+    sunday.style.color = "red"
+}
+})
+ </script>

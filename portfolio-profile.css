@@ -1,0 +1,140 @@
+@charset "UTF=8";
+
+#headerimgarea{
+    display: flex;
+    text-align: center;
+    margin:0 auto;
+    justify-content: center;
+    background-image: url(h1-7.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 1000px;
+    height: fit-content;
+    justify-content: space-evenly;
+}
+#title{
+    width: fit-content;
+    padding-top: 200px;
+    height: 300px;
+}
+h1{
+    background-color: aliceblue;
+}
+#h1p{
+    text-shadow: 1px 1px 1px rgb(14, 216, 74);
+}
+#mainpagebutton{
+    text-align: right;
+    font-size: 20px;
+}
+#next1{
+    width: 0px;
+    height: 0px;
+    border-top:solid 20px transparent;
+    border-bottom:solid 20px transparent;
+    border-left:solid 40px transparent;
+    border-right:solid 40px pink;
+    margin-top: 250px;
+    background: none;
+    
+}
+#next2{
+    width:0px;
+    height:0px;
+    border-top:solid 20px transparent;
+    border-bottom:solid 20px transparent;
+    border-left:solid 50px pink;
+    border-right:solid 50px transparent;
+    margin-top: 250px;
+    background: none;
+}
+
+body{
+    background-color: rgb(237, 248, 182);
+}
+
+h2{
+    font-size: 50px;
+    border-bottom: 6px double green;
+    border-right: 6px double green;
+    width: 500px;
+    padding-left: 30px;
+    box-shadow: 5px 5px 5px rgb(114, 92, 92);
+    text-align: center;
+    background-color:rgb(231, 248, 145); ;
+}
+p{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+    
+#mokuji li{
+    width: 100px;
+    text-align: center;
+}
+#mokuji{
+    background-color: rgb(250, 212, 218);
+    width: 200px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#mokujititle{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(75, 75, 75);
+}
+h3{
+    font-size: 45px;
+    background-color: rgb(252, 225, 191);
+    border-radius: 20px;
+    width: 200px;
+    margin-top: 100px;
+    margin-left: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgb(253, 132, 152);
+}
+li{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+th{
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+}
+td{
+    text-align: center;
+}
+table{
+    border: 2px solid black;
+}
+h4{
+    font-size: 30px;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+#syumiul{
+    list-style: upper-roman;
+}
+#syumiul li{
+    font-weight: 900;
+}
+#totop{
+    width: 70px ;
+    height: 70px;
+    position: fixed;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    right: 20px;
+    bottom: 20px;
+}
+footer{
+    background-color: rgb(161, 159, 159);
+    padding-top: 30px;
+
+}

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script src="pomodorotimer.js"></script>
+    </head>
+
+    <header>
+        <h1>Pomodoro <span>Timer</span></h1>
+        <p id="explain" style="text-align: center;">トマトをクリックしたらスタート！</p>
+        <style>
+        h1{margin: 0 auto; font-size: 40px; color: red; border:10px inset rgb(252, 123, 3);width: fit-content;margin-top: 10px; border-radius: 10px;}
+        </style> 
+    </header>
+
+    <body>
+        <div id="timerzone" style="background-color: rgb(252, 237, 218);" >
+            
+            <p id="time" onclick="startcount()"><span id="minute">25</span>:<span id="seconds">00</span><br>
+                <span id="breaksign">Break Time!!</span></p>
+                <p id="beforestart" style="text-align: center; font-size: 30px; display: none; text-align: center;">始まるよ！！</p>
+            <audio src="鳩時計1.mp3" id="audio"></audio>
+        <style>
+            
+            #time{
+                font-size: 100px;
+                text-shadow: 5px 5px 5px rgb(11, 20, 3);
+                color: white;
+                background-image:url(tomato_red.png) ;
+                background-position: center top;
+                background-size: 400px;
+                height: 300px;
+                width: 400px;
+                margin: 0 auto;
+                text-align: center;
+                padding-top: 120px;
+            }
+            #breaksign{
+                font-size: 100px;
+                text-align: center;
+                color: rgb(6, 202, 88);
+                text-shadow: 5px 5px 10px black;
+                display: none;
+                
+                
+            }
+        </style>
+        </div>
+    </body>
+</html>

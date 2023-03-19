@@ -1,0 +1,68 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>BMI計算</title>
+    <style>
+        .redText{
+            color:red;
+        }
+        .font16{
+            font-size:16pt;
+        }
+        .displaynone{
+            display: none;
+        }
+    </style>
+
+</head>
+
+<header></header>
+
+<body>
+    <h1 id="headtitle">BMI計算</h1>
+    <p>
+        身長と体重を入力して計算ボタンを押してください
+    </p>
+    <p>
+        <div class="input1">
+            <input type="text" id="heightinput" name="height" placeholder="身長">cm <br>
+            <span id="heightinputmsg" class="redText"></span>
+        </div>
+        <div class="input2">
+            <input type="text" id="weightinput" name="weight" placeholder="体重">kg <br>
+            <span id="weightinputmsg" class="redText"></span>
+        </div>
+        <button type="button" id="calBMIButton" onclick="oncalcbmibuttonclick()"  disabled>計算</button>
+    </p>
+    <p id="resultmessage" class="displaynone">
+        あなたのBMI値は<span id="bmiresult" class="redText font16"></span>です。<br>
+        <span id="advicemessage"></span>
+    </p>
+
+<script type="text/javascript" src="BMI-1.js"></script>
+<script type="text/javascript" src="BMI-2.js"></script>
+
+
+<style>
+    h1{
+        border: 5px solid pink;
+        border-radius: 20px;
+        width: 400px;
+        font-size: 50px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .input1{
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    .input2{
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    p{
+        margin: 0 auto;
+    }
+</style>
+</body>
+</html>

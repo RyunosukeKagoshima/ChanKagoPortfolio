@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+
+#headerimgarea{
+    display: flex;
+    text-align: center;
+    margin:0 auto;
+    justify-content: center;
+    background-image: url(h1-7.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 1000px;
+    height: fit-content;
+    justify-content: space-evenly;
+}
+#title{
+    width: fit-content;
+    padding-top: 200px;
+    height: 300px;
+}
+h1{
+   background-color: bisque; 
+}
+#h1p{
+    text-shadow: 1px 1px 1px rgb(18, 231, 50);
+}
+#mainpagebutton{
+    text-align: right;
+    font-size: 20px;
+}
+
+body{
+    background-color: rgb(237, 248, 182);
+}
+#next1{
+    width: 0px;
+    height: 0px;
+    border-top:solid 20px transparent;
+    border-bottom:solid 20px transparent;
+    border-left:solid 40px transparent;
+    border-right:solid 40px pink;
+    margin-top: 250px;
+    background: none;
+    
+}
+#next2{
+    width:0px;
+    height:0px;
+    border-top:solid 20px transparent;
+    border-bottom:solid 20px transparent;
+    border-left:solid 50px pink;
+    border-right:solid 50px transparent;
+    margin-top: 250px;
+    background: none;
+}
+
+h2{
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 2px 2px 3px rgb(4, 130, 172);
+}
+#h2p{
+    text-align: center;
+    font-size: 40px;
+}
+#h2div{
+    border: 1px solid rgb(113, 220, 247);
+    border-radius: 30px 0px 30px 0px;
+    background-color: rgb(146, 245, 245);
+    width: 700px;
+    margin:  0 auto;
+    margin-top: 40px;
+}
+#yajirushiarea{
+}
+#ya1{
+    border-top: 50px solid lightgreen;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    width: 0px;
+    height: 0px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#ya2{
+    border-top: 50px solid lightgreen;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    width: 0px;
+    height: 0px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#ya3{
+    border-top: 50px solid lightgreen;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    width: 0px;
+    height: 0px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+h3{
+    border: 1px solid rgb(113, 220, 247);
+    border-radius: 30px 0px 30px 0px;
+    background-color: rgb(146, 245, 245);
+    margin:  0 auto;
+    width: 450px;
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+}
+p{
+    text-align: center;
+    font-size: 30px;
+}
+#h3div{
+    background-color: rgb(245, 249, 250);
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#totop{
+    width: 70px ;
+    height: 70px;
+    position: fixed;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    right: 20px;
+    bottom: 20px;
+}

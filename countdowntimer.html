@@ -1,0 +1,113 @@
+<html>
+  <script src="countdowntimer.js"></script>
+  <header>
+    <h1>カウントダウンタイマー</h1>
+    <style>
+      h1{ text-align: center; font-size: 80px; color: darkorange; text-shadow: 3px 3px 3px red;}
+    </style>
+  </header>
+  <body>
+
+  <div id="inputzone">
+    <p id="explain">時間を入力後、STARTを押してください</p>
+    <input type="number" id="inputnumber2" min="0" value="0">分
+    <input type="number" id="inputnumber" min="1" max="59" value="1">秒
+  
+    <div class="button2">
+    <input type="button" id="startbutton" value="START" onclick="startcount();decision()" >
+    <input type="button" id="stopbutton" value="STOP">
+    <input type="button" id="restartbutton" value="RESTART" onclick="startcount()">
+    <input type="buton" id="clearbutton" value="CLEAR">
+    </div>
+
+    <div id="timeup">
+      <audio id="timeupaudio" src="鳩時計1.mp3"></audio>
+      <p class="Finishsign" id="Finishsign">TIME UP</p>
+    </div>
+
+  </div>
+
+    <div id="aaaaa">
+    <p><span id="bbbbb">00</span>分<span id="ccccc">00</span>秒</p>
+  </div>
+  </body>
+  <style>
+    #inputnumber2{
+      margin-left: 40px;
+      width: 70px;
+      height: 30px;
+      font-size: 30px;
+      text-align: center;
+    }
+    #inputnumber{
+      width: 70px;
+      height: 30px;
+      font-size: 30px;
+      text-align: center;
+    }
+    #inputzone{
+      text-align: center;
+      font-size: 20px;
+    }
+    #aaaaa{
+      text-align: center;
+      font-size: 50px;
+      display: none;
+    }
+    #bbbbb{
+      font-size: 100px;
+      color: aqua;
+      margin-left: 50px;
+      text-shadow: 3px 3px 3px rgb(42, 50, 53);
+    }
+    #ccccc{
+      font-size: 100px;
+      color: aqua;
+      text-shadow: 3px 3px 3px rgb(42, 50, 53);
+    }
+    #stopbutton{
+      display: none;
+      margin: 20px;
+      width: 80px;
+      height: 40px;
+      border-radius: 20px;
+      text-align: center;
+      color: white;
+      background-color: orangered;
+    }
+    #startbutton{
+      margin: 20px;
+      width: 80px;
+      height: 40px;
+      border-radius: 20px;
+      text-align: center;
+      color: white;
+      background-color: orange;
+    }
+    #restartbutton{
+      display: none;
+      margin: 20px;
+      width: 80px;
+      height: 40px;
+      border-radius: 20px;
+      text-align: center;
+      color: white;
+      background-color: rgba(211, 156, 4, 0.815);
+    }#clearbutton{
+      display: none;
+      margin: 20px;
+      width: 80px;
+      height: 40px;
+      border-radius: 20px;
+      text-align: center;
+      color:white;
+      background-color: rgb(252, 82, 21);
+    }
+    .Finishsign{
+      font-size: 100px;
+      font-family: cursive; 
+      text-shadow: 3px 3px 4px rgb(136, 8, 8);
+      display: none;
+    }
+  </style>
+</html>
